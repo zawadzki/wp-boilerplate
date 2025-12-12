@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 style="margin-top:0;padding-top:0;text-align:center;">wp-boilerplate</h1>
+<h1 align="center" style="margin-top:0;padding-top:0;display:block;">wp-boilerplate</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/roots/bedrock/master/composer.json&label=bedrock&logo=roots&logoColor=white&query=$.require[%22roots/wordpress%22]&colorB=2b3072&colorA=525ddc&style=flat-square">
