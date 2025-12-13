@@ -7,6 +7,7 @@ services:
       - ./:/var/www/html
     environment:
       WP_ENV: development
+    user: "${UID:-1000}:${GID:-1000}"
     depends_on:
       - db
 
@@ -63,11 +64,13 @@ services:
       - db
 
   node:
-    image: node:20-alpine
-    working_dir: /var/www/html
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+    working_dir: /app
     volumes:
-      - ./:/var/www/html
-    command: ["tail", "-f", "/dev/null"]
+      - ./web/app/themes/${THEME_NAME}:/app
+    command: [ "tail", "-f", "/dev/null" ]
 
 networks:
   proxy:
