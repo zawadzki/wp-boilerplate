@@ -36,10 +36,8 @@ A lightweight local [WordPress](https://wordpress.com/) development setup based 
 - For Traefik container configuration steps [click here](https://github.com/zawadzki/traefik)
 - Rename `.env.example` to `.env` and fill it with correct data
 - From Project root directory run `docker compose -p example up -d`
-- Add in `/etc/hosts` new position `127.0.0.1 example.test`
-- From Traefik docker directory go to (or create) `certs` and run command `mkcert -cert-file local-cert.pem -key-file local-key.pem example.test "*.test" localhost 127.0.0.1`
-- Then in Traefik root directory `docker compose up -d --force-recreate`
-- At this point WP should be up and running at `https://example.test`
+- Add in `/etc/hosts` new position `127.0.0.1 example.local.dev`
+- At this point WP should be up and running at `https://example.local.dev`
 
 ----
 
@@ -62,7 +60,7 @@ Connect database to **PhpStorm**:
 ---
 
 ## Known issues
-Some browsers might dislike `.test` domain.
+Some browsers might dislike `.local.dev` domain.
 
 ### Firefox
 If DNS-over-HTTPS is enabled it can bypass `/etc/hosts`

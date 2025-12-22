@@ -1,0 +1,106 @@
+/* Admin Bar Base Styles */
+#wpadminbar {
+    color: var(--text);
+    background: var(--mantle);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-sans-serif), sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Admin Bar Links & Items */
+#wpadminbar .ab-empty-item,
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar span.ab-label,
+#wpadminbar > #wp-toolbar span.noticon {
+    color: var(--text);
+}
+
+/* Admin Bar Icons */
+#wpadminbar .ab-icon::before,
+#wpadminbar .ab-item::before,
+#wpadminbar #adminbarsearch::before {
+    color: var(--text);
+}
+
+/* Hidden Elements */
+#wp-admin-bar-wp-logo,
+#wp-admin-bar-duplicate-post .ab-icon,
+#wp-admin-bar-search {
+    display: none;
+}
+
+/* Submenus */
+#wpadminbar .menupop .ab-sub-wrapper {
+    background: var(--mantle);
+}
+
+#wpadminbar .quicklinks .menupop ul li a,
+#wpadminbar .quicklinks .menupop ul li a strong,
+#wpadminbar .quicklinks .menupop.hover ul li a,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a{
+    color: var(--text);
+}
+
+/* Hover & Focus States - Top Level */
+#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojs .ab-top-menu > li.menupop:hover > .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
+    color: var(--accent);
+    background: var(--mantle);
+}
+
+/* Hover & Focus States - Icons */
+#wpadminbar:not(.mobile) li:hover #adminbarsearch:before,
+#wpadminbar:not(.mobile) li:hover .ab-icon:before,
+#wpadminbar:not(.mobile) li:hover .ab-item:after,
+#wpadminbar:not(.mobile) li:hover .ab-item:before {
+    color: var(--accent);
+}
+
+/* Hover & Focus States - Labels */
+#wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label,
+#wpadminbar:not(.mobile) > #wp-toolbar li.hover span.ab-label,
+#wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label {
+    color: var(--accent);
+}
+
+/* Hover & Focus States - Submenu Items */
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar li #adminbarsearch.adminbar-focused:before,
+#wpadminbar li .ab-item:focus .ab-icon:before,
+#wpadminbar li .ab-item:focus:before,
+#wpadminbar li a:focus .ab-icon:before,
+#wpadminbar li.hover .ab-icon:before,
+#wpadminbar li.hover .ab-item:before,
+#wpadminbar li:hover #adminbarsearch:before,
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
+    color: var(--accent);
+}
+
+/* User Account */
+#wpadminbar #wp-admin-bar-user-info a .display-name {
+    font-weight: 500;
+    font-family: var(--font-sans-serif), sans-serif;
+}
+
+#wpadminbar #wp-admin-bar-user-info a:hover .display-name {
+    color: var(--accent);
+}
+
+/* Avatar Styling */
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img,
+#wp-admin-bar-user-info .avatar {
+    border-radius: 50%;
+}
