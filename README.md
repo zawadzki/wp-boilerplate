@@ -48,8 +48,7 @@ In Project root directory:
 
 ```bash
 docker compose run --rm node npm install
-docker compose run --rm node npm run dev
-docker compose run --rm node npm run build
+docker compose run --rm node yarn build
 ```
 
 Connect database to **PhpStorm**:

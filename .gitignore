@@ -1,12 +1,17 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/z-content-builder
+!web/app/plugins/z-admin-theme
 web/app/mu-plugins/bedrock-disallow-indexing
+web/app/languages/*
 web/app/themes/*
 web/app/upgrade
+web/app/upgrade-temp-backup
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
+web/app/ai1wm-backups
 
 # WordPress
 web/wp
