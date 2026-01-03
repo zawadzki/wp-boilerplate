@@ -2,6 +2,8 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/bedrock-disallow-indexing
+web/app/mu-plugins/zavyn-*
+web/app/mu-plugins/000-zavyn-loader.php
 web/app/languages/*
 web/app/themes/*
 web/app/upgrade
