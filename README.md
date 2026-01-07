@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://zawdam.dev/">
-    <img alt="zawdam.dev" src="https://zawdam.dev/images/logo.svg?ver=1.0" height="100">
+    <img alt="zawdam.dev" src="https://zawdam.dev/logo.svg?ver=1.0" height="100">
   </a>
 </p>
 
